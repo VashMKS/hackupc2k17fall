@@ -1,0 +1,49 @@
+
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    ;(function($) {
+    $.fn.textfill = function(options) {
+        var fontSize = options.maxFontPixels;
+        var ourText = $('span:visible:first', this);
+        var maxHeight = $(this).height();
+        var maxWidth = $(this).width();
+        var textHeight;
+        var textWidth;
+        do {
+            ourText.css('font-size', fontSize);
+            textHeight = ourText.height();
+            textWidth = ourText.width();
+            fontSize = fontSize - 1;
+        } while ((textHeight > maxHeight || textWidth > maxWidth) && fontSize > 3);
+        return this;
+    }
+})(jQuery);
+
+
+$(document).ready(function() {
+var elements = document.getElementsByClassName('jtextfill');
+    for(var i = 0; i < elements.length; i++ ){
+        $(elements[i]).textfill({ maxFontPixels: 36 });
+        console.log("insi")
+     }
+});
+</script>
+</head>
+<body>
+    
+    <div style ="position:absolute;left:0px;top:0px; width:600px;height:450px;border: 1px solid black;"></div><div class = "jtextfill"  style = " position:absolute; left:189px;top:25px;width:209px;height:47"><span>Inside the flag</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:155px;top:69px;width:384px;height:75"><span>used for : Energy Storage</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:43px;top:152px;width:64px;height:46"><span>Lipid</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:319px;top:126px;width:123px;height:28"><span>Pigments</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:315px;top:159px;width:130px;height:31"><span>Steroids</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:181px;top:208px;width:350px;height:32"><span>Monomers : Triglycerides</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:403px;top:213px;width:43px;height:37"><span>JJ</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:180px;top:254px;width:352px;height:39"><span>Nonpolar- do not dissolve in HO</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:185px;top:306px;width:334px;height:63"><span>Examples phospholipids -</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:498px;top:324px;width:36px;height:12"><span>incumb</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:322px;top:343px;width:239px;height:29"><span>Chlorophyll - 9</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:323px;top:352px;width:222px;height:64"><span>curtis Outfront Page</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:488px;top:411px;width:53px;height:16"><span>on leave</span>
+</div></body></html>

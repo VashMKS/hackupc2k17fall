@@ -1,0 +1,52 @@
+
+        <html>
+        <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            ;(function($) {
+            $.fn.textfill = function(options) {
+                var fontSize = options.maxFontPixels;
+                var ourText = $('span:visible:first', this);
+                var maxHeight = $(this).height();
+                var maxWidth = $(this).width();
+                var textHeight;
+                var textWidth;
+                do {
+                    ourText.css('font-size', fontSize);
+                    textHeight = ourText.height();
+                    textWidth = ourText.width();
+                    fontSize = fontSize - 1;
+                } while ((textHeight > maxHeight || textWidth > maxWidth) && fontSize > 3);
+                return this;
+            }
+        })(jQuery);
+
+
+        $(document).ready(function() {
+        var elements = document.getElementsByClassName('jtextfill');
+            for(var i = 0; i < elements.length; i++ ){
+                $(elements[i]).textfill({ maxFontPixels: 100 });
+                console.log("insi")
+             }
+        });
+        </script>
+        </head>
+        <body>
+
+            <div style ="position:absolute;left:0px;top:0px; width:2411px;height:2706px;border: 1px solid black;"></div><div class = "jtextfill"  style = " position:absolute; left:37px;top:7px;width:179px;height:22"><span>ne . we develo</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:1756px;top:5px;width:590px;height:66"><span>where's the redbull</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:8px;top:107px;width:2175px;height:243"><span>TEXT RECOGNITION USING</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:2251px;top:86px;width:79px;height:51"><span>101</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:200px;top:497px;width:1237px;height:151"><span>COMPUTER VISION</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:1698px;top:627px;width:34px;height:19"><span>P</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:110px;top:807px;width:2043px;height:74"><span>SIMPLE WEBSITE WITH IMAGE UPLOADER / TAKE A PHOTO</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:103px;top:954px;width:1171px;height:128"><span>PRODUCE TEXT OUTPUT ( EXT,HTML )</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:118px;top:1113px;width:1700px;height:93"><span>KEEP THE POSITIONS ON THE SAME PLACE *</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:140px;top:1292px;width:1899px;height:93"><span>USE " READ HANDWRITTEN TEXT FROM IMAGE " API</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:169px;top:1412px;width:918px;height:86"><span>( MICROSOFT AZURE,IT'S FREE )</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:186px;top:1588px;width:906px;height:61"><span>BONUS POINT IF MOBILE APP</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:188px;top:1725px;width:1612px;height:85"><span>SURPRISE US BY EXPANDING UPON THE</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:193px;top:1852px;width:308px;height:49"><span>CONCEPT</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:213px;top:2138px;width:1918px;height:172"><span>WE'LL BE BACK ON SAT YAM</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:238px;top:2567px;width:781px;height:76"><span>KEY REQUIREMENTS ! ! !</span>
+</div></body></html>

@@ -1,0 +1,73 @@
+
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    ;(function($) {
+    $.fn.textfill = function(options) {
+        var fontSize = options.maxFontPixels;
+        var ourText = $('span:visible:first', this);
+        var maxHeight = $(this).height();
+        var maxWidth = $(this).width();
+        var textHeight;
+        var textWidth;
+        do {
+            ourText.css('font-size', fontSize);
+            textHeight = ourText.height();
+            textWidth = ourText.width();
+            fontSize = fontSize - 1;
+        } while ((textHeight > maxHeight || textWidth > maxWidth) && fontSize > 3);
+        return this;
+    }
+})(jQuery);
+
+
+$(document).ready(function() {
+var elements = document.getElementsByClassName('jtextfill');
+    for(var i = 0; i < elements.length; i++ ){
+        $(elements[i]).textfill({ maxFontPixels: 36 });
+        console.log("insi")
+     }
+});
+</script>
+</head>
+<body>
+    
+    <div style ="position:absolute;left:0px;top:0px; width:1000px;height:647px;border: 1px solid black;"></div><div class = "jtextfill"  style = " position:absolute; left:199px;top:28px;width:440px;height:34"><span>A Universal SEO Strategy Audit</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:347px;top:64px;width:184px;height:22"><span>Five Questions</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:24px;top:133px;width:185px;height:23"><span>What keywords do</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:458px;top:121px;width:392px;height:35"><span>Just Kidding ! That's Not a Strategy</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:53px;top:164px;width:162px;height:15"><span>want to rank for ?</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:25px;top:201px;width:204px;height:19"><span>. How do we get links ?</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:544px;top:191px;width:61px;height:13"><span>This is</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:20px;top:240px;width:177px;height:23"><span>3 site speed ! Mobile</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:363px;top:255px;width:354px;height:23"><span>1 ) What does our organization create</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:16px;top:289px;width:197px;height:20"><span>5 what about Penguin</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:384px;top:281px;width:140px;height:15"><span>that helps solve</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:554px;top:274px;width:141px;height:20"><span>archers' questions</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:760px;top:234px;width:117px;height:55"><span>books</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:497px;top:300px;width:232px;height:17"><span>what will we create in the future )</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:52px;top:313px;width:87px;height:16"><span>and Panda</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:385px;top:308px;width:72px;height:15"><span>problems</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:809px;top:322px;width:48px;height:14"><span>THEM</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:16px;top:344px;width:177px;height:23"><span>When do I get</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:360px;top:341px;width:387px;height:24"><span>2 ) What is the unique value we provide</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:766px;top:341px;width:122px;height:29"><span>ADD ED</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:58px;top:379px;width:53px;height:14"><span>money</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:393px;top:374px;width:239px;height:17"><span>that no one else does</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:806px;top:382px;width:170px;height:23"><span>GOD Those folks !</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:359px;top:419px;width:347px;height:20"><span>3 ) Who will help amplify our message</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:406px;top:449px;width:63px;height:17"><span>and why</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:784px;top:441px;width:139px;height:29"><span>* * * * * &</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:357px;top:492px;width:337px;height:24"><span>4 ) What is our process for turning</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:856px;top:488px;width:45px;height:13"><span>Search</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:390px;top:521px;width:313px;height:15"><span>Visitors from search into customers</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:849px;top:513px;width:77px;height:14"><span>Repeat visits</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:355px;top:546px;width:351px;height:24"><span>5 ) How do we expose what we do in</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:846px;top:538px;width:94px;height:15"><span>Email Signup</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:788px;top:555px;width:48px;height:10"><span>Force</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:388px;top:574px;width:342px;height:23"><span>a way that engines can easily crawl ,</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:846px;top:560px;width:71px;height:11"><span>Conversion</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:391px;top:602px;width:303px;height:18"><span>index . understand , and show off ?</span>
+</div><div class = "jtextfill"  style = " position:absolute; left:759px;top:598px;width:50px;height:19"><span>PASS</span>
+</div></body></html>
